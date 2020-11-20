@@ -35,8 +35,8 @@ let { src, dest } = require("gulp"),
   cleanCss = require("gulp-clean-css"),
   sourcemaps = require("gulp-sourcemaps"),
   include = require("gulp-include"),
-  ttf2woff = require("gulp-ttf2woff"),
-  ttf2woff2 = require("gulp-ttf2woff2");
+//  ttf2woff = require("gulp-ttf2woff"),
+//  ttf2woff2 = require("gulp-ttf2woff2");
 // webp = require("gulp-webp"),
 // webphtml = require("gulp-webp-html");
 // webpcss = require("gulp-webpcss");
@@ -122,8 +122,12 @@ function images() {
 }
 
 function fonts() {
-  src(path.src.fonts).pipe(ttf2woff()).pipe(dest(path.build.fonts));
-  return src(path.src.fonts).pipe(ttf2woff2()).pipe(dest(path.build.fonts));
+  src(path.src.fonts)
+//     .pipe(ttf2woff())
+    .pipe(dest(path.build.fonts));
+  return src(path.src.fonts)
+//     .pipe(ttf2woff2())
+    .pipe(dest(path.build.fonts));
 }
 
 function clean() {
