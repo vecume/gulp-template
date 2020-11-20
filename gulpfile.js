@@ -34,14 +34,13 @@ let { src, dest } = require("gulp"),
   groupMedia = require("gulp-group-css-media-queries"),
   cleanCss = require("gulp-clean-css"),
   sourcemaps = require("gulp-sourcemaps"),
-  include = require("gulp-include");
+  include = require("gulp-include"),
+  imagemin = require("gulp-imagemin");
 //  ttf2woff = require("gulp-ttf2woff"),
 //  ttf2woff2 = require("gulp-ttf2woff2");
 // webp = require("gulp-webp"),
 // webphtml = require("gulp-webp-html");
 // webpcss = require("gulp-webpcss");
-// imagemin = require("gulp-imagemin"),
-// fileInclude = require("gulp-file-include");
 
 function browserSync() {
   browsersync.init({
