@@ -35,6 +35,7 @@ let { src, dest } = require("gulp"),
   cleanCss = require("gulp-clean-css"),
   sourcemaps = require("gulp-sourcemaps"),
   include = require("gulp-include"),
+  fileInclude = require("gulp-file-include"),
   imagemin = require("gulp-imagemin");
 //  ttf2woff = require("gulp-ttf2woff"),
 //  ttf2woff2 = require("gulp-ttf2woff2");
